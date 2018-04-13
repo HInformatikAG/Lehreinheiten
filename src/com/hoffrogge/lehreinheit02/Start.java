@@ -1,4 +1,4 @@
-package hoffrogge.lehreinheit02;
+package com.hoffrogge.lehreinheit02;
 
 public class Start {
 
