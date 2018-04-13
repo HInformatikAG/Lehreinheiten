@@ -6,11 +6,10 @@ public class FehlerFaelle {
 
 		int[] zahlen = { 1, 2, 3, 4, 5 };
 
-		System.out.println(zahlen[0]);
-
 		System.out.println(zahlen[5]);
 	}
 
+	@SuppressWarnings("null")
 	private void testeNullPointerException() {
 
 		FehlerFaelle nichtInitialisierteFehler = null;
@@ -28,6 +27,7 @@ public class FehlerFaelle {
 
 	private void testeClassCastException() {
 
+		@SuppressWarnings("unused")
 		Obst apfel = new Apfel();
 		Obst birne = new Birne();
 
@@ -39,29 +39,17 @@ public class FehlerFaelle {
 
 		FehlerFaelle fehlerFaelle = new FehlerFaelle();
 
-		 try {
-			fehlerFaelle.testeArrayIndexOutOfBoundsException();
-		} catch (Exception e) {
-			System.err.println("Hier wurde eine ArrayIndexOutOfBoundsException demonstriert.");
-		}
+		// Hier wird eine ArrayIndexOutOfBoundsException demonstriert.
+		 fehlerFaelle.testeArrayIndexOutOfBoundsException();
 
-		 try {
-			fehlerFaelle.testeNullPointerException();
-		} catch (Exception e) {
-			System.err.println("Hier wurde eine NullPointerException demonstriert.");
-		}
+		// Hier wird eine NullPointerException demonstriert.
+		 fehlerFaelle.testeNullPointerException();
 
-		 try {
-			fehlerFaelle.testeDurchNullTeilen();
-		} catch (Exception e) {
-			System.err.println("Hier wurde eine ArithmeticException demonstriert.");
-		}
+		// Hier wird eine ArithmeticException: / by zero demonstriert.
+		 fehlerFaelle.testeDurchNullTeilen();
 
-		try {
-			fehlerFaelle.testeClassCastException();
-		} catch (Exception e) {
-			System.err.println("Hier wurde eine ClassCastException demonstriert.");
-		}
+		// Hier wird eine ClassCastException demonstriert.
+		fehlerFaelle.testeClassCastException();
 	}
 
 	private class Obst {
