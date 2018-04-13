@@ -36,6 +36,9 @@ public class FensterMitLabel {
 		/* Hier wird die Groesse des Fensters gesetzt */
 		fenster.setSize(new Dimension(150, 100));
 
+		/* Kleiner Trick, um das Fenster in der Mitte des Bildschirms anzuzeigen */
+		fenster.setLocationRelativeTo(null);
+
 		/*
 		 * Standardmaessig ist ein neues Fenster unsichtbar, man muss es sichtbar
 		 * setzen.
