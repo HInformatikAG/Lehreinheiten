@@ -82,7 +82,7 @@ public class Rechteck {
 
 	public double berechneDiagonale() {
 
-		/* c ist gesuchte Diagonale, ab und b sind breite und laenge */
+		/* c ist gesuchte Diagonale, a und b sind breite und laenge */
 
 		/* a² + b² = c² */
 
