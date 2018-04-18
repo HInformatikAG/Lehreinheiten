@@ -82,7 +82,13 @@ public class Rechteck {
 
 	public double berechneDiagonale() {
 
+		/* c ist gesuchte Diagonale, ab und b sind breite und laenge */
+
 		/* a² + b² = c² */
+
+		/* Wurzel aus (a² + b²) = Wurzel aus (c²) */
+
+		/* c = Wurzel aus (a² + b²) */
 
 		double diagonaleQuadrat = Math.pow(breite, 2) + Math.pow(laenge, 2);
 
