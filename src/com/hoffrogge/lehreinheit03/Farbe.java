@@ -1,5 +1,7 @@
 package com.hoffrogge.lehreinheit03;
 
+import java.awt.Color;
+
 public class Farbe {
 
 	int rot;
@@ -34,5 +36,9 @@ public class Farbe {
 
 	public void setBlau(int blau) {
 		this.blau = blau;
+	}
+
+	public Color konvertiereZuColor() {
+		return new Color(rot, gelb, blau);
 	}
 }
