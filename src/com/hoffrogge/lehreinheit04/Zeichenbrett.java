@@ -1,20 +1,27 @@
 package com.hoffrogge.lehreinheit04;
 
+import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Container;
+import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.swing.BorderFactory;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.SwingConstants;
+import javax.swing.border.Border;
 
 @SuppressWarnings("serial")
 public class Zeichenbrett extends JPanel {
 
 	private transient BufferedImage bild;
 
-	private List<GeometrischeFigur> zeichenbareObjekte;
+	private transient List<GeometrischeFigur> zeichenbareObjekte;
 
 	public Zeichenbrett() {
 
@@ -28,6 +35,30 @@ public class Zeichenbrett extends JPanel {
 		g2d.dispose();
 
 		zeichenbareObjekte = new ArrayList<>();
+
+		JFrame fenster = new JFrame();
+
+		Container fensterInhalt = fenster.getContentPane();
+		fensterInhalt.setLayout(new BorderLayout());
+
+		Border leererRahmen = BorderFactory.createEmptyBorder(5, 5, 5, 5);
+
+		JLabel label = new JLabel("Zeichenbrett");
+
+		label.setHorizontalAlignment(SwingConstants.CENTER);
+
+		label.setBorder(leererRahmen);
+
+		fensterInhalt.add(label, BorderLayout.PAGE_START);
+		fensterInhalt.add(this, BorderLayout.CENTER);
+		fenster.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+		fenster.setSize(new Dimension(220, 260));
+
+		/* Kleiner Trick, um das Fenster in der Mitte des Bildschirms anzuzeigen */
+		fenster.setLocationRelativeTo(null);
+
+		fenster.setVisible(true);
 	}
 
 	@Override
