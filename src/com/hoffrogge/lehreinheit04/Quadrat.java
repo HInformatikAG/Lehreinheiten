@@ -8,7 +8,7 @@ public class Quadrat implements GeometrischeFigur {
 
 	private int mittelpunktX;
 	private int mittelpunktY;
-	private int kantenLaenge;
+	private int durchmesser;
 
 	private Farbe farbe;
 
@@ -21,7 +21,7 @@ public class Quadrat implements GeometrischeFigur {
 
 		graphics.setColor(farbe.konvertiereZuColor());
 
-		int halbeKantenlaenge = kantenLaenge / 2;
+		int halbeKantenlaenge = durchmesser / 2;
 
 		int linksObenX = mittelpunktX - halbeKantenlaenge;
 		int linksObenY = mittelpunktY - halbeKantenlaenge;
@@ -48,12 +48,13 @@ public class Quadrat implements GeometrischeFigur {
 		this.mittelpunktY = y;
 	}
 
-	public void setKantenLaenge(int kantenLaenge) {
-		this.kantenLaenge = kantenLaenge;
-	}
-
 	@Override
 	public void setLinienFarbe(Farbe farbe) {
 		this.farbe = farbe;
+	}
+
+	@Override
+	public void setDurchmesser(int durchmesser) {
+		this.durchmesser = durchmesser;
 	}
 }

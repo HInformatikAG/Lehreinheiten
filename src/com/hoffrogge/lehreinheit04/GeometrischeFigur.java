@@ -8,6 +8,8 @@ public interface GeometrischeFigur {
 
 	void setMittelpunkt(int x, int y);
 
+	void setDurchmesser(int d);
+
 	void setLinienFarbe(Farbe farbe);
 
 	void zeichnen(Graphics graphics);
