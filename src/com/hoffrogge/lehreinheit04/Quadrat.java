@@ -13,6 +13,7 @@ public class Quadrat implements GeometrischeFigur {
 	private Farbe farbe;
 
 	public Quadrat() {
+		farbe = new Farbe(0, 0, 0);
 	}
 
 	@Override
