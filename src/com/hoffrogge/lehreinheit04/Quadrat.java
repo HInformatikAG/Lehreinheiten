@@ -57,4 +57,9 @@ public class Quadrat implements GeometrischeFigur {
 	public void setDurchmesser(int durchmesser) {
 		this.durchmesser = durchmesser;
 	}
+
+	@Override
+	public Punkt getMittelPunkt() {
+		return new Punkt(mittelpunktX, mittelpunktY);
+	}
 }
