@@ -11,7 +11,7 @@ public class Main {
 		Quadrat rahmen = new Quadrat();
 		rahmen.setLinienFarbe(new Farbe(255, 153, 0));
 		rahmen.setMittelpunkt(400, 400);
-		rahmen.setDurchmesser(800);
+		rahmen.setDurchmesser(798);
 
 		zeichenbrett.fuegeZeichenbaresObjektHinzu(rahmen);
 
