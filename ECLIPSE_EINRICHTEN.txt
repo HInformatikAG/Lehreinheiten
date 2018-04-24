@@ -1,0 +1,13 @@
+Eclipse Entwicklungsumgebung installieren, um in Java zu entwickeln.
+
+Java installieren
+Schritt 1: Java herunterladen von http://www.oracle.com
+Aktuell ist Java 10, damit sollte alles funktionieren, wer auf Nummer sicher gehen will, auf den Laptops der AG ist Java 8 installiert
+Download Java 8: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+Download Java 10: http://www.oracle.com/technetwork/java/javase/downloads/jdk10-downloads-4416644.html
+Schritt 2: Java mit der heruntergeladenen Exe installieren
+
+Eclipse installieren
+Schritt 1: Eclipse herunterladen von http://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/oxygen3a
+Schritt 2: die heruntergeladene Eclipse.zip entpacken
+Schritt 3: im entpackten Ordner Eclipse ist eine Eclipse.exe, diese startet Eclipse
