@@ -27,7 +27,8 @@ public class KeyWordsBeispiele {
 
 	}
 
-	public static void wasMachtKeyWordStatic() {
+	@SuppressWarnings("static-access")
+    public static void wasMachtKeyWordStatic() {
 
 		System.out.println("Das statische Datum dieses Objekts ist " + statischesDatum);
 
@@ -38,7 +39,8 @@ public class KeyWordsBeispiele {
 				+ KeyWordsBeispiele.statischesDatum);
 	}
 
-	public void berechneSummeVoid(int a, int b) {
+	@SuppressWarnings("unused")
+    public void berechneSummeVoid(int a, int b) {
 
 		/* hier wird etwas getan, aber nichts zurueckgegeben */
 		int summe = a + b;
