@@ -5,9 +5,11 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import com.hoffrogge.lehreinheit03.Rechteck;
+
 public class CollectionsBeispiele {
 
-	List listeVonRechtecken = new ArrayList();
-	Set setVonRechtecken = new HashSet();
+    List<Rechteck> listeVonRechtecken = new ArrayList<>();
+    Set<Rechteck>  setVonRechtecken   = new HashSet<>();
 
 }
