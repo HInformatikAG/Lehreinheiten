@@ -8,9 +8,9 @@ public class Main {
 
         Zeichenbrett zeichenbrett = new Zeichenbrett();
 
-        Zeichenflaeche rahmen = new Zeichenflaeche();
+        Zeichenflaeche zeichenFlaeche = new Zeichenflaeche();
 
-        zeichenbrett.fuegeZeichenbaresObjektHinzu(rahmen);
+        zeichenbrett.fuegeZeichenbaresObjektHinzu(zeichenFlaeche);
 
         zeichenbrett.zeichneAlleZeichenbarenObjekte();
     }
