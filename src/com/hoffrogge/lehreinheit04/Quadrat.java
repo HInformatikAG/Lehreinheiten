@@ -43,9 +43,9 @@ public class Quadrat implements GeometrischeFigur {
     }
 
     @Override
-    public void setMittelpunkt(int x, int y) {
-        this.mittelpunktX = x;
-        this.mittelpunktY = y;
+    public void setMittelpunkt(Punkt mittelpunkt) {
+        this.mittelpunktX = mittelpunkt.getX();
+        this.mittelpunktY = mittelpunkt.getY();
     }
 
     @Override

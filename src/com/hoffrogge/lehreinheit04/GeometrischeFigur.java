@@ -6,7 +6,7 @@ import com.hoffrogge.lehreinheit03.Farbe;
 
 public interface GeometrischeFigur {
 
-    void setMittelpunkt(int x, int y);
+    void setMittelpunkt(Punkt mittelpunkt);
 
     Punkt getMittelPunkt();
 
