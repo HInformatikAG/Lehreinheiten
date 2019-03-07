@@ -20,6 +20,8 @@ public class Zeichenbrett extends JPanel {
 
     private transient List<GeometrischeFigur> zeichenbareObjekte;
 
+    private JFrame                            fenster;
+
     public Zeichenbrett() {
 
         setBorder(BorderFactory.createRaisedBevelBorder());
@@ -33,7 +35,7 @@ public class Zeichenbrett extends JPanel {
 
         zeichenbareObjekte = new ArrayList<>();
 
-        JFrame fenster = new JFrame();
+        fenster = new JFrame();
         fenster.setTitle("Zeichenbrett 800x800");
 
         Container fensterInhalt = fenster.getContentPane();
@@ -48,8 +50,6 @@ public class Zeichenbrett extends JPanel {
          * Kleiner Trick, um das Fenster in der Mitte des Bildschirms anzuzeigen
          */
         fenster.setLocationRelativeTo(null);
-
-        fenster.setVisible(true);
     }
 
     @Override
@@ -68,6 +68,8 @@ public class Zeichenbrett extends JPanel {
             zeichenbaresObjekt.zeichnen(g2d);
 
         g2d.dispose();
+
+        fenster.setVisible(true);
     }
 
     public void fuegeZeichenbaresObjektHinzu(GeometrischeFigur zeichenbaresObjekt) {
