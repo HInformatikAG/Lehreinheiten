@@ -34,8 +34,8 @@ public class Dreieck implements GeometrischeFigur {
      */
     private int                x;
     private int                y;
-    private Farbe              fuellFarbe    = new Farbe(0, 255, 255);
-    private Farbe              linienFarbe   = new Farbe(0, 0, 0);
+    private Farbe              fuellFarbe    = new Farbe(0, 255, 255);  //initial weiss
+    private Farbe              linienFarbe   = new Farbe(0, 0, 0);      //initial schwarz
 
     /*
      * Besondere Form eines Feldes, dies ist keine Variable, sondern eine
@@ -134,7 +134,7 @@ public class Dreieck implements GeometrischeFigur {
 
         /*
          * Farbe ist eine eigene Implementierung, Java benoetigt zum Zeichnen
-         * aber ein Objekt vom Typ Color. Zum Glueck hat die Klasse Farbe ein
+         * aber ein Objekt vom Typ Color. Zum Glueck hat die Klasse Farbe eine
          * Methode, die ein Objekt vom Typ Color erzeugt (mit der aktuellen
          * Farbe natuerlich).
          */
@@ -155,7 +155,7 @@ public class Dreieck implements GeometrischeFigur {
      * Hier folgen Methoden, die nicht im Interface GeometrischeFigur definiert
      * sind. Der Rest des Programs kann diese Methoden nutzen, wenn er ein
      * Dreieck als Dreieck kennt (also eine Instanz/Variable vom Typ Dreieck
-     * hat) und die Methoden public sind, wenn er das Dreieck aber nur als
+     * hat) und die Methoden public sind Wenn er das Dreieck aber nur als
      * GeometrischeFigur kennt, koennen diese Methoden dort nicht genutzt
      * werden.
      */

@@ -8,8 +8,8 @@ import com.hoffrogge.lehreinheit03.Farbe;
 /*
  * Diese Klasse kann alles, was auch die Klasse Dreieck kann,
  * denn sie erbt von der Klasse Dreieck (Keyword extends). D. h.
- * sie kennt alle Methoden, die nicht private sind und alle Felder,
- * die nicht private sind und alle Konstanten, die nicht private sind.
+ * sie kennt alle Methoden, die nicht private sind (dazu gehoert auch package private)
+ * und alle Felder, die nicht private sind und alle Konstanten, die nicht private sind.
  * Da ein Dreieck eine GeometrischeFigur ist, ist auch ein
  * GleichseitigesDreieck eine GeometrischeFigur. 
  */
@@ -26,7 +26,7 @@ public class GleichseitigesDreieck extends Dreieck {
     /*
      * Hier wird die zeichnen-Methode der Elternklasse Dreieck ueberschrieben.
      * D. h., ein GleichseitigesDreieck verhaelt sich genau so, wie ein Dreieck,
-     * mit Ausnahme der zeichnung.
+     * mit Ausnahme der Zeichnung.
      */
     @Override
     public void zeichnen(Graphics graphics) {
@@ -50,6 +50,8 @@ public class GleichseitigesDreieck extends Dreieck {
         // Linie vom Mittelpunkt aus nach rechts
         graphics.drawLine(x, y, x + halbeKantenLaenge, y);
 
+        // die Methode berechneSpitzeDesDreiecksAlsPunkt() returned einen Punkt,
+        // der weiter genutzt werden kann
         Punkt spitze = berechneSpitzeDesDreiecksAlsPunkt();
 
         // Linie von links zur Spitze
@@ -77,8 +79,8 @@ public class GleichseitigesDreieck extends Dreieck {
 
     /*
      * Eine private Methode, die nur in dieser Klasse genutzt werden kann. Diese
-     * Methode returned ein Objekt vom typ Farbe, d. h. die Stelle, die diese
-     * Methode aufruft, bekommt dieses Farbe-Objekt und kann damit weiter
+     * Methode returned ein Objekt vom Typ Punkt, d. h. die Stelle, die diese
+     * Methode aufruft, bekommt dieses Punkt-Objekt und kann damit weiter
      * arbeiten.
      */
     private Punkt berechneSpitzeDesDreiecksAlsPunkt() {
