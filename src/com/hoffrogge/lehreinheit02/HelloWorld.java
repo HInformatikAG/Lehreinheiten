@@ -1,4 +1,4 @@
-package com.hoffrogge.lehreinheit01;
+package com.hoffrogge.lehreinheit02;
 
 public class HelloWorld {
 
