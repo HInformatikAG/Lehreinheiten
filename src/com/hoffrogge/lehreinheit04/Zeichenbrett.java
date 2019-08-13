@@ -13,10 +13,43 @@ import javax.swing.BorderFactory;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+/*
+ * Zeichenfläche mit einer Größe von 800 x 800 Pixeln
+ * @formatter:off
+ *  
+ *  0,0 ----------------------------------------- 800,0
+ *  |                                               |
+ *  |                                               |
+ *  |                                               |
+ *  |                                               |
+ *  |                                               |
+ *  |                                               |
+ *  |                                               |
+ *  |                                               |
+ *  |                                               |
+ *  |                                               |
+ *  |                                               |
+ *  |                                               |
+ *  |                                               |
+ *  |                                               |
+ *  |                                               |
+ *  |                                               |
+ *  |                                               |
+ *  0,800 --------------------------------------- 800,800
+ *  
+ * @formater:on 
+ */
+/**
+ * Zeichenfläche mit einer Größe von 800 x 800 Pixeln. <br />
+ * Kann eine {@link GeometrischeFigur} aufnehmen und zeichnen.<br />
+ * Hinzufuegen mit {@link Zeichenbrett#fuegeZeichenbaresObjektHinzu(GeometrischeFigur)}.<br />
+ * Zeichnen mit {@link Zeichenbrett#zeichneAlleZeichenbarenObjekte()}<br />
+ * Zeichnen einer Linie ist möglich mit {@link Zeichenbrett#zeichneLinie(int, int, int, int)}<br />
+ */
 @SuppressWarnings("serial")
 public class Zeichenbrett extends JPanel {
 
-    private transient BufferedImage           bild;
+    private transient BufferedImage           zeichenflaeche;
 
     private transient List<GeometrischeFigur> zeichenbareObjekte;
 
@@ -26,10 +59,10 @@ public class Zeichenbrett extends JPanel {
 
         setBorder(BorderFactory.createRaisedBevelBorder());
 
-        bild = new BufferedImage(800, 800, BufferedImage.TYPE_INT_RGB);
-        Graphics g2d = bild.getGraphics();
+        zeichenflaeche = new BufferedImage(800, 800, BufferedImage.TYPE_INT_RGB);
+        Graphics g2d = zeichenflaeche.getGraphics();
         g2d.setColor(Color.WHITE);
-        g2d.fillRect(0, 0, bild.getWidth(), bild.getHeight());
+        g2d.fillRect(0, 0, zeichenflaeche.getWidth(), zeichenflaeche.getHeight());
 
         g2d.dispose();
 
@@ -57,12 +90,12 @@ public class Zeichenbrett extends JPanel {
 
         super.paintComponent(g);
 
-        g.drawImage(bild, 2, 2, this);
+        g.drawImage(zeichenflaeche, 2, 2, this);
     }
 
     public void zeichneAlleZeichenbarenObjekte() {
 
-        Graphics g2d = bild.getGraphics();
+        Graphics g2d = zeichenflaeche.getGraphics();
 
         for (GeometrischeFigur zeichenbaresObjekt : zeichenbareObjekte)
             zeichenbaresObjekt.zeichnen(g2d);
@@ -78,5 +111,16 @@ public class Zeichenbrett extends JPanel {
 
     public void entferneZeichenbaresObjekt(GeometrischeFigur zeichenbaresObjekt) {
         zeichenbareObjekte.remove(zeichenbaresObjekt);
+    }
+    
+    /**
+     * Zeichnet eine Linie vom Punkt x1, y1 zum Punkt x2, y2
+     */
+    public void zeichneLinie(int x1, int y1, int x2, int y2) {
+        
+        Graphics g2d = zeichenflaeche.getGraphics();
+        
+        g2d.setColor(Color.BLACK);
+        g2d.drawLine(x1, y1, x2, y2);
     }
 }
