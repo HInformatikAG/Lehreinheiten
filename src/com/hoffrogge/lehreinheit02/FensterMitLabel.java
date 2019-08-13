@@ -1,4 +1,4 @@
-package com.hoffrogge.lehreinheit03;
+package com.hoffrogge.lehreinheit02;
 
 import java.awt.Dimension;
 
