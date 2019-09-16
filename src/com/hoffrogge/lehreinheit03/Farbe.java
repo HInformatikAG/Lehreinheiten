@@ -4,41 +4,46 @@ import java.awt.Color;
 
 public class Farbe {
 
-	int rot;
-	int gelb;
-	int blau;
+    int rot;
+    int gruen;
+    int blau;
 
-	public Farbe(int rot, int gelb, int blau) {
-		this.rot = rot;
-		this.gelb = gelb;
-		this.blau = blau;
-	}
+    public Farbe(int rot, int gruen, int blau) {
+	this.rot = rot;
+	this.gruen = gruen;
+	this.blau = blau;
+    }
 
-	public int getRot() {
-		return rot;
-	}
+    public int getRot() {
+	return rot;
+    }
 
-	public void setRot(int rot) {
-		this.rot = rot;
-	}
+    public void setRot(int rot) {
+	this.rot = rot;
+    }
 
-	public int getGelb() {
-		return gelb;
-	}
+    public int getGruen() {
+	return gruen;
+    }
 
-	public void setGelb(int gelb) {
-		this.gelb = gelb;
-	}
+    public void setGruen(int gruen) {
+	this.gruen = gruen;
+    }
 
-	public int getBlau() {
-		return blau;
-	}
+    public int getBlau() {
+	return blau;
+    }
 
-	public void setBlau(int blau) {
-		this.blau = blau;
-	}
+    public void setBlau(int blau) {
+	this.blau = blau;
+    }
 
-	public Color konvertiereZuColor() {
-		return new Color(rot, gelb, blau);
-	}
+    public Color konvertiereZuColor() {
+	return new Color(rot, gruen, blau);
+    }
+
+    @Override
+    public String toString() {
+	return "RGB: " + rot + ":" + gruen + ":" + blau;
+    }
 }
