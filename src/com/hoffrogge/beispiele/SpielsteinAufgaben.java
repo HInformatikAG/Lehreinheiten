@@ -19,9 +19,9 @@ public class SpielsteinAufgaben {
 
         /* 6. Erstelle ein Objekt von Farbe und weise es einer Variablen zu */
 
-        /* 7. Setze dem Spielstein eine Farbe! */
+        /* 7. Setze dem Spielstein eine Farbe */
 
-        /* 8. Setze dem Spielstein eine andere x-Koordinate! */
+        /* 8. Setze dem Spielstein eine andere x-Koordinate */
 
         /* 9. Erstelle ein Objekt von einem Spielstein mit x = 5 und y = 10 */
 
@@ -29,7 +29,7 @@ public class SpielsteinAufgaben {
 
         /* 11. Welche Farbe hat das neue Objekt? */
 
-        /* 12. Erstelle ein neues Objekt von Spielstein mit dieser Farbe */
+        /* 12. Erstelle ein neues Objekt von Spielstein mit der Farbe aus 6. */
 
         /* 13. Welche Farbe hat der Spielstein? */
 
@@ -39,7 +39,7 @@ public class SpielsteinAufgaben {
 
         /*
          * 16. Erstelle noch ein Objekt von Spielstein mit anderen Werten für
-         * die Farbe, x und y! (Vergiss nicht, das Objekt einer Variablen
+         * die Farbe, x und y (Vergiss nicht, das Objekt einer Variablen
          * zuzuweisen.)
          */
 
@@ -47,7 +47,7 @@ public class SpielsteinAufgaben {
 
         /* 18. Welchen x-Wert hat das allererste Objekt? */
 
-        /* 19. Ändere den x-Wert vom allerersten Objekt! */
+        /* 19. Ändere den x-Wert vom allerersten Objekt */
 
         /* 20. Welchen x-Wert hat das letzte Objekt? */
     }
