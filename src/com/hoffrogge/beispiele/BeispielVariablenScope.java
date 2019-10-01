@@ -82,21 +82,26 @@ public class BeispielVariablenScope {
 
     public static void main(String[] args) {
 
-        BeispielVariablenScope siebenElf = new BeispielVariablenScope(7, 11);
-        System.out.print("siebenElf klassenVariable ");
-        siebenElf.printKlassenVariable();
-        System.out.print("siebenElf objektVvariable ");
-        siebenElf.printObjektVariable();
+        BeispielVariablenScope objektA = new BeispielVariablenScope(7, 11);
+        System.out.print("objektA klassenVariable ");
+        objektA.printKlassenVariable();
+        System.out.print("objektA objektVariable ");
+        objektA.printObjektVariable();
 
-        BeispielVariablenScope siebenSiebenElfElf = new BeispielVariablenScope(77, 1111);
-        System.out.print("siebenSiebenElfElf klassenVariable ");
-        siebenSiebenElfElf.printKlassenVariable();
-        System.out.print("siebenSiebenElfElf objektVariable ");
-        siebenSiebenElfElf.printObjektVariable();
+        // nur Leerzeile
+        System.out.println();
 
-        System.out.print("siebenElf klassenVariable ");
-        siebenElf.printKlassenVariable();
-        System.out.print("siebenElf objektVvariable ");
-        siebenElf.printObjektVariable();
+        BeispielVariablenScope objektB = new BeispielVariablenScope(77, 1111);
+        System.out.print("objektB klassenVariable ");
+        objektB.printKlassenVariable();
+        System.out.print("objektB objektVariable ");
+        objektB.printObjektVariable();
+
+        System.out.println();
+
+        System.out.print("objektA klassenVariable ");
+        objektA.printKlassenVariable();
+        System.out.print("objektA objektVariable ");
+        objektA.printObjektVariable();
     }
 }
