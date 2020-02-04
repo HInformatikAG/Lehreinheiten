@@ -24,4 +24,5 @@ public class Taschenrechner {
      * Teste die vier Methoden von Taschenrechner mit Hilfe von
      * System.out.println();
      */
+
 }
