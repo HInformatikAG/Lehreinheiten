@@ -1,6 +1,6 @@
 package com.hoffrogge.beispiele;
 
-import com.hoffrogge.lehreinheit03.Farbe;
+import java.awt.Color;
 
 public class SpielsteinAufgaben {
 
@@ -22,7 +22,7 @@ public class SpielsteinAufgaben {
 	einSpielstein.getPosition();
 
 	/* 6. Erstelle ein Objekt von Farbe und weise es einer Variablen zu */
-	Farbe farbe2 = new Farbe(12, 34, 99);
+	Color farbe2 = new Color(12, 34, 99);
 
 	/* 7. Setze dem Spielstein eine Farbe! */
 	einSpielstein.setFarbe(farbe2);

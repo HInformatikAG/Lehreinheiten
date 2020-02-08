@@ -1,15 +1,15 @@
 package com.hoffrogge.lehreinheit04;
 
+import java.awt.Color;
 import java.awt.Graphics;
 
-import com.hoffrogge.lehreinheit03.Farbe;
 import com.hoffrogge.lehreinheit03.Rechteck;
 
 public class Quadrat extends Rechteck implements GeometrischeFigur {
 
     private int mittelpunktX;
     private int mittelpunktY;
-    private Farbe farbe = new Farbe(0, 0, 0);
+    private Color farbe = new Color(0, 0, 0);
 
     public Quadrat() {
     }
@@ -25,7 +25,7 @@ public class Quadrat extends Rechteck implements GeometrischeFigur {
     @Override
     public void zeichnen(Graphics graphics) {
 
-	graphics.setColor(farbe.konvertiereZuColor());
+	graphics.setColor(farbe);
 
 	int halbeKantenlaenge = getBreite() / 2;
 
@@ -55,7 +55,7 @@ public class Quadrat extends Rechteck implements GeometrischeFigur {
     }
 
     @Override
-    public void setLinienFarbe(Farbe farbe) {
+    public void setLinienFarbe(Color farbe) {
 	this.farbe = farbe;
     }
 
@@ -65,7 +65,7 @@ public class Quadrat extends Rechteck implements GeometrischeFigur {
     }
 
     @Override
-    public Farbe getLinienFarbe() {
+    public Color getLinienFarbe() {
 	return farbe;
     }
 

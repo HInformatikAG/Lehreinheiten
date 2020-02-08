@@ -12,8 +12,6 @@ import java.awt.Color;
 /* Definition von Imports, d. h. von anderen Klassen, die hier in dieser Klasse benutzt werden. */
 import java.awt.Graphics;
 
-import com.hoffrogge.lehreinheit03.Farbe;
-
 /*
  * Definition der Klasse: public -> sie ist oeffentlich, also von ueberall aus nutzbar,
  * implements GeometrischeFigur -> sie implementiert alle Methoden, die von dem
@@ -40,8 +38,8 @@ public class Dreieck implements GeometrischeFigur {
      * Mittelpunkt Y-Koordinate
      */
     private int y;
-    private Farbe fuellFarbe = new Farbe(255, 255, 255); // initial weiss
-    private Farbe linienFarbe = new Farbe(0, 0, 0); // initial schwarz
+    private Color fuellFarbe = new Color(255, 255, 255); // initial weiss
+    private Color linienFarbe = new Color(0, 0, 0); // initial schwarz
 
     /*
      * Besondere Form eines Feldes, dies ist keine Variable, sondern eine Konstante.
@@ -71,7 +69,7 @@ public class Dreieck implements GeometrischeFigur {
      */
     /**
      * Dreieck mit dem Mittelpunkt x, y
-     * 
+     *
      * @param x
      * @param y
      */
@@ -91,7 +89,7 @@ public class Dreieck implements GeometrischeFigur {
      * Noch ein Konstruktor, der als Parameter eine Farbe uebergeben bekommt und
      * diese einem Feld zuordnet.
      */
-    public Dreieck(Farbe fuellFarbe) {
+    public Dreieck(Color fuellFarbe) {
 	this.fuellFarbe = fuellFarbe;
     }
 
@@ -125,12 +123,12 @@ public class Dreieck implements GeometrischeFigur {
     }
 
     @Override
-    public Farbe getLinienFarbe() {
+    public Color getLinienFarbe() {
 	return linienFarbe;
     }
 
     @Override
-    public void setLinienFarbe(Farbe farbe) {
+    public void setLinienFarbe(Color farbe) {
 	this.linienFarbe = farbe;
     }
 
@@ -142,13 +140,8 @@ public class Dreieck implements GeometrischeFigur {
     @Override
     public void zeichnen(Graphics graphics) {
 
-	/*
-	 * Farbe ist eine eigene Implementierung, Java benoetigt zum Zeichnen aber ein
-	 * Objekt vom Typ Color. Zum Glueck hat die Klasse Farbe eine Methode, die ein
-	 * Objekt vom Typ Color erzeugt (mit der aktuellen Farbe natuerlich).
-	 */
-	Color linienFarbeAlsColor = linienFarbe.konvertiereZuColor();
-	graphics.setColor(linienFarbeAlsColor);
+	// Waehlen, mit welcher Farbe gezeichnet werden soll
+	graphics.setColor(linienFarbe);
 
 	// vom Mittelpunkt nach rechts zeichnen
 	graphics.drawLine(x, y, x, y + KANTEN_LAENGE);
@@ -171,14 +164,14 @@ public class Dreieck implements GeometrischeFigur {
     /*
      * Ein Getter fuer die Farbe, die zum Fuellen verwendet wird.
      */
-    public Farbe getFuellFarbe() {
+    public Color getFuellFarbe() {
 	return fuellFarbe;
     }
 
     /*
      * Ein Setter fuer die Farbe, die zum Fuellen verwendet wird.
      */
-    public void setFuellFarbe(Farbe fuellFarbe) {
+    public void setFuellFarbe(Color fuellFarbe) {
 	this.fuellFarbe = fuellFarbe;
     }
 

@@ -5,9 +5,8 @@
 /*Dies ist die Package Deklaration. Diese Klasse befindet sich in diesem Package (so ähnlich wie ein Ordner)*/
 package com.hoffrogge.beispiele;
 
-/*Dies ist ein Import. Eine fremde Klasse wird aus einem fremden Package importiert, damit sie benutzt werden kann.
- * Ist so ähnlich wie sich aus einem anderen Klassenzimmer Kreide auszuleihen.*/
-import com.hoffrogge.lehreinheit03.Farbe;
+import java.awt.Color;
+
 import com.hoffrogge.lehreinheit04.Punkt;
 
 /*Die ist die Definition der Klasse, sie ist öffentlich, sie ist eine Klasse und sie heisst "Spielstein"*/
@@ -25,7 +24,7 @@ public class Spielstein {
      * ist relativ egal, man könnte die Variable auch "schwarz", "gruen" oder
      * "peter" nennen. Peter ist aber kein guter Name für eine Farbe.
      */
-    private Farbe farbe;
+    private Color farbe;
 
     /* noch mehr Variablen */
     private int x;
@@ -49,7 +48,7 @@ public class Spielstein {
      * (beachte Groß- / Kleinschreibung). Auch hier ist der Typ wichtig, der Name
      * kann aber geändert werden.
      */
-    public Spielstein(Farbe farbe) {
+    public Spielstein(Color farbe) {
 
 	/*
 	 * Das neue Objekt der Klasse soll eine bestimmte Farbe haben. Die Farbe aus dem
@@ -72,7 +71,7 @@ public class Spielstein {
     }
 
     /* Ein Konstruktor mit allen drei Parametern */
-    public Spielstein(Farbe farbe, int x, int y) {
+    public Spielstein(Color farbe, int x, int y) {
 
 	/* alle drei Werte merken */
 	this.farbe = farbe;
@@ -89,7 +88,7 @@ public class Spielstein {
      * Ein Getter für die Farbe. Die aktuelle Farbe des Spielsteins wird an den
      * Aufrufer gegeben.
      */
-    public Farbe getFarbe() {
+    public Color getFarbe() {
 
 	System.out.println("Dieser Spielstein hat die Farbe " + farbe);
 
@@ -100,7 +99,7 @@ public class Spielstein {
      * Ein Setter für die Farbe. Die neue Farbe des Spielsteins wird vom Aufrufer
      * vorgegeben.
      */
-    public void setFarbe(Farbe farbe) {
+    public void setFarbe(Color farbe) {
 
 	this.farbe = farbe;
 

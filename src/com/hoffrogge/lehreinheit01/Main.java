@@ -1,6 +1,7 @@
 package com.hoffrogge.lehreinheit01;
 
-import com.hoffrogge.lehreinheit03.Farbe;
+import java.awt.Color;
+
 import com.hoffrogge.lehreinheit04.Dreieck;
 import com.hoffrogge.lehreinheit04.GleichseitigesDreieck;
 
@@ -21,7 +22,7 @@ public class Main {
 	Dreieck dreieck = new Dreieck(200, 200);
 
 	GleichseitigesDreieck gleichseitigesDreieck = new GleichseitigesDreieck(300, 300);
-	gleichseitigesDreieck.setFuellFarbe(new Farbe(123, 123, 123));
+	gleichseitigesDreieck.setFuellFarbe(new Color(123, 123, 123));
 
 	zeichenbrett.fuegeZeichenbaresObjektHinzu(dreieck);
 	zeichenbrett.fuegeZeichenbaresObjektHinzu(gleichseitigesDreieck);

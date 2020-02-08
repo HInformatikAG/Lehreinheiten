@@ -3,8 +3,6 @@ package com.hoffrogge.lehreinheit04;
 import java.awt.Color;
 import java.awt.Graphics;
 
-import com.hoffrogge.lehreinheit03.Farbe;
-
 /*
  * Diese Klasse kann alles, was auch die Klasse Dreieck kann,
  * denn sie erbt von der Klasse Dreieck (Keyword extends). D. h.
@@ -21,7 +19,7 @@ public class GleichseitigesDreieck extends Dreieck {
      */
     /**
      * GleichseitigesDreieck mit dem Mittelpunkt x, y
-     * 
+     *
      * @param x
      * @param y
      */
@@ -42,9 +40,8 @@ public class GleichseitigesDreieck extends Dreieck {
 	int halbeKantenLaenge = KANTEN_LAENGE / 2;
 
 	// getLinienFarbe() kommt aus der Klasse Dreieck
-	Farbe linienFarbe = getLinienFarbe();
-	Color linienColor = linienFarbe.konvertiereZuColor();
-	graphics.setColor(linienColor);
+	Color linienFarbe = getLinienFarbe();
+	graphics.setColor(linienFarbe);
 
 	// getX() und getY() kommen aus Dreieck
 	int x = getX();
@@ -67,8 +64,8 @@ public class GleichseitigesDreieck extends Dreieck {
 	graphics.drawLine(x + halbeKantenLaenge, y, spitze.getX(), spitze.getY());
 
 	/* damit das Dreieck noch schoener wird, wird es gefuellt */
-	Farbe fuellFarbe = getFuellFarbe();
-	graphics.setColor(fuellFarbe.konvertiereZuColor());
+	Color fuellFarbe = getFuellFarbe();
+	graphics.setColor(fuellFarbe);
 
 	// int[] ist ein Array mit allen X-Koordinaten
 	int[] xPoints = { x - halbeKantenLaenge, x + halbeKantenLaenge, spitze.getX() };

@@ -1,105 +1,107 @@
 package com.hoffrogge.lehreinheit03;
 
+import java.awt.Color;
+
 public class Rechteck {
 
-	/* Eigenschaften der Klasse */
+    /* Eigenschaften der Klasse */
 
-	private int breite;
-	private int laenge;
-	private Farbe farbe;
+    private int breite;
+    private int laenge;
+    private Color farbe;
 
-	/* Konstruktoren der Klasse */
+    /* Konstruktoren der Klasse */
 
-	public Rechteck() {
+    public Rechteck() {
 
-		/* Standardkonstruktor */
-		/*
-		 * Die Eigenschaften von Rechteck, also breite, laenge und farbe werden nicht
-		 * veraendert. Sie haben also die Werte 0, 0 und null.
-		 */
-	}
+	/* Standardkonstruktor */
+	/*
+	 * Die Eigenschaften von Rechteck, also breite, laenge und farbe werden nicht
+	 * veraendert. Sie haben also die Werte 0, 0 und null.
+	 */
+    }
 
-	public Rechteck(int breite, int laenge) {
+    public Rechteck(int breite, int laenge) {
 
-		this.breite = breite;
-		this.laenge = laenge;
+	this.breite = breite;
+	this.laenge = laenge;
 
-		/*
-		 * breite und laenge dieses Objekts werden auf die Werte der passenden Parameter
-		 * gesetzt. farbe bleibt aber null
-		 */
-	}
+	/*
+	 * breite und laenge dieses Objekts werden auf die Werte der passenden Parameter
+	 * gesetzt. farbe bleibt aber null
+	 */
+    }
 
-	public Rechteck(Farbe farbe) {
+    public Rechteck(Color farbe) {
 
-		this.farbe = farbe;
+	this.farbe = farbe;
 
-		/*
-		 * farbe wird auf den Wert des Parameters gesetzt, laenge und breite bleiben
-		 * aber bei 0 und 0
-		 */
-	}
+	/*
+	 * farbe wird auf den Wert des Parameters gesetzt, laenge und breite bleiben
+	 * aber bei 0 und 0
+	 */
+    }
 
-	public Rechteck(int breite, int laenge, Farbe farbe) {
+    public Rechteck(int breite, int laenge, Color farbe) {
 
-		this.breite = breite;
-		this.laenge = laenge;
-		this.farbe = farbe;
+	this.breite = breite;
+	this.laenge = laenge;
+	this.farbe = farbe;
 
-		/*
-		 * Alle drei Eigenschaften breite, laenge und farbe werden auf die Werte der
-		 * Parameter gesetzt
-		 */
-	}
+	/*
+	 * Alle drei Eigenschaften breite, laenge und farbe werden auf die Werte der
+	 * Parameter gesetzt
+	 */
+    }
 
-	/* Getter und Setter der Klasse */
+    /* Getter und Setter der Klasse */
 
-	public int getBreite() {
-		return breite;
-	}
+    public int getBreite() {
+	return breite;
+    }
 
-	public void setBreite(int breite) {
-		this.breite = breite;
-	}
+    public void setBreite(int breite) {
+	this.breite = breite;
+    }
 
-	public int getLaenge() {
-		return laenge;
-	}
+    public int getLaenge() {
+	return laenge;
+    }
 
-	public void setLaenge(int laenge) {
-		this.laenge = laenge;
-	}
+    public void setLaenge(int laenge) {
+	this.laenge = laenge;
+    }
 
-	public Farbe getFarbe() {
-		return farbe;
-	}
+    public Color getFarbe() {
+	return farbe;
+    }
 
-	public void setFarbe(Farbe farbe) {
-		this.farbe = farbe;
-	}
+    public void setFarbe(Color farbe) {
+	this.farbe = farbe;
+    }
 
-	/* Manipulierende Methoden der Klassen */
+    /* Manipulierende Methoden der Klassen */
 
-	public double berechneDiagonale() {
+    public double berechneDiagonale() {
 
-		/* c ist gesuchte Diagonale, a und b sind breite und laenge */
+	/* c ist gesuchte Diagonale, a und b sind breite und laenge */
 
-		/* a² + b² = c² */
+	/* a² + b² = c² */
 
-		/* Wurzel aus (a² + b²) = Wurzel aus (c²) */
+	/* Wurzel aus (a² + b²) = Wurzel aus (c²) */
 
-		/* c = Wurzel aus (a² + b²) */
+	/* c = Wurzel aus (a² + b²) */
 
-		double diagonaleQuadrat = Math.pow(breite, 2) + Math.pow(laenge, 2);
+	double diagonaleQuadrat = Math.pow(breite, 2) + Math.pow(laenge, 2);
 
-		return Math.sqrt(diagonaleQuadrat);
-	}
+	return Math.sqrt(diagonaleQuadrat);
+    }
 
-	public int berechneFlaeche() {
-		return breite * laenge;
-	}
+    public int berechneFlaeche() {
+	return breite * laenge;
+    }
 
-	public void mischeFarbe() {
-		/* diese Methode kann noch nichts tun */
-	}
+    public void mischeFarbe() {
+	/* diese Methode kann noch nichts tun */
+    }
 }

@@ -1,8 +1,7 @@
 package com.hoffrogge.lehreinheit04;
 
+import java.awt.Color;
 import java.awt.Graphics;
-
-import com.hoffrogge.lehreinheit03.Farbe;
 
 public interface GeometrischeFigur {
 
@@ -12,9 +11,9 @@ public interface GeometrischeFigur {
 
     void setDurchmesser(int d);
 
-    Farbe getLinienFarbe();
+    Color getLinienFarbe();
 
-    void setLinienFarbe(Farbe farbe);
+    void setLinienFarbe(Color farbe);
 
     void zeichnen(Graphics graphics);
 }
