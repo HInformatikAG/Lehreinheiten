@@ -17,6 +17,35 @@ public class Main {
          * Linien. Schaffst du es, einen Tetrisspielstein zu zeichnen?
          * =====================================================================
          */
+        /*
+         * Zeichenflaeche mit einer Groesse von 800 x 800 Pixeln
+         * @formatter:off
+         *
+         *  x,y Koordinaten
+         *
+         *  0,0 ----------------------------------------- 800,0
+         *  |                                               |
+         *  |                                               |
+         *  |                                               |
+         *  |                                               |
+         *  |                                               |
+         *  |                                               |
+         *  |                                               |
+         *  |                                               |
+         *  |                                               |
+         *  |                                               |
+         *  |                                               |
+         *  |                                               |
+         *  |                                               |
+         *  |                                               |
+         *  |                                               |
+         *  |                                               |
+         *  |                                               |
+         *  0,800 --------------------------------------- 800,800
+         *
+         * @formater:on
+         */
+        
         Zeichenbrett zeichenbrett = new Zeichenbrett();
 
         Dreieck dreieck = new Dreieck(200, 200);
