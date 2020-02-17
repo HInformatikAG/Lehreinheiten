@@ -1,4 +1,4 @@
-package com.hoffrogge.lehreinheit03;
+package com.hoffrogge.lehreinheit04;
 
 import java.awt.Color;
 
