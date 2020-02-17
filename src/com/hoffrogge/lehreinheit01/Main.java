@@ -17,9 +17,9 @@ public class Main {
          * Linien. Schaffst du es, einen Tetrisspielstein zu zeichnen?
          * =====================================================================
          */
+	
         /*
          * Zeichenflaeche mit einer Groesse von 800 x 800 Pixeln
-         * @formatter:off
          *
          *  x,y Koordinaten
          *
@@ -43,7 +43,6 @@ public class Main {
          *  |                                               |
          *  0,800 --------------------------------------- 800,800
          *
-         * @formater:on
          */
         
         Zeichenbrett zeichenbrett = new Zeichenbrett();
