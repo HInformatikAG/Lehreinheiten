@@ -4,13 +4,13 @@ package com.hoffrogge.lehreinheit02;
  * Beispiel fuer einen komplexen Datentyp, der einen Text und eine Zahl als
  * Variable hat.
  */
-public class ZahlUndText {
+public class Wuerfel {
 
     /* eine Zahl von -2.147.483.648 bis 2.147.483.647 */
-    private int eineZahl;
+    private int anzahlSeiten;
 
     /* ein Text */
-    private String einText;
+    private String beschreibung;
 
     /*
      * Jede Klasse hat einen Konstruktor. Wenn kein Konstruktor explizit definiert
@@ -21,13 +21,13 @@ public class ZahlUndText {
      * Standardkonstruktor ohne Parameter. Dieser Konstruktor erstellt ein Objekt
      * dieser Klasse, ohne Variablen zu setzen.
      */
-    public ZahlUndText() {
+    public Wuerfel() {
 	/*
 	 * Variablen werden nicht gesetzt, d. h. sie haben folgende Werte:
-	 * 
-	 * einZahl ist 0 (Standardwert fuer int)
-	 * 
-	 * einText ist null (Standardwert fuer String)
+	 *
+	 * anzahlSeiten ist 0 (Standardwert fuer int)
+	 *
+	 * beschreibung ist null (Standardwert fuer String)
 	 */
     }
 
@@ -35,49 +35,49 @@ public class ZahlUndText {
      * Konstruktor mit einem Parameter, der die Zahl sofort einem bestimmten Wert
      * zuweist.
      */
-    public ZahlUndText(int eineZahl) {
+    public Wuerfel(int anzahlSeiten) {
 	/*
-	 * der Wert von eineZahl in diesem Objekt ("this.eineZahl") wird auf den Wert
-	 * des Parameters gesetzt ("eineZahl" ohne this)
+	 * der Wert von anzahlSeiten in diesem Objekt ("this.anzahlSeiten") wird auf den
+	 * Wert des Parameters gesetzt ("anzahlSeiten" ohne this)
 	 */
-	this.setEineZahl(eineZahl);
+	this.anzahlSeiten = anzahlSeiten;
 
-	/* einText ist immer noch null */
+	/* beschreibung ist immer noch null */
     }
 
     /*
      * Konstruktor mit einem Parameter, der den Text sofort einem bestimmten Wert
      * zuweist.
      */
-    public ZahlUndText(String einText) {
-	this.setEinText(einText);
+    public Wuerfel(String beschreibung) {
+	this.beschreibung = beschreibung;
 
-	/* einZahl ist hier noch 0 */
+	/* anzahlSeiten ist hier noch 0 */
     }
 
     /* Konstruktor, der beide Variablen fuer das erstellte Objekt setzt */
-    public ZahlUndText(int eineZahl, String einText) {
-	this.setEineZahl(eineZahl);
-	this.setEinText(einText);
+    public Wuerfel(int anzahlSeiten, String beschreibung) {
+	this.anzahlSeiten = anzahlSeiten;
+	this.beschreibung = beschreibung;
     }
 
     /*
      * Getter und Setter werden verwendet, um die Variablen eines Objekts abzufragen
-     * und zu ändern
+     * und zu aendern
      */
-    public int getEineZahl() {
-	return eineZahl;
+    public int getAnzahlSeiten() {
+	return anzahlSeiten;
     }
 
-    public void setEineZahl(int eineZahl) {
-	this.eineZahl = eineZahl;
+    public void setAnzahlSeiten(int anzahlSeiten) {
+	this.anzahlSeiten = anzahlSeiten;
     }
 
-    public String getEinText() {
-	return einText;
+    public String getBeschreibung() {
+	return beschreibung;
     }
 
-    public void setEinText(String einText) {
-	this.einText = einText;
+    public void setBeschreibung(String beschreibung) {
+	this.beschreibung = beschreibung;
     }
 }
