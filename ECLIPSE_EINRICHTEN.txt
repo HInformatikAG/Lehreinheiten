@@ -1,3 +1,6 @@
+Stand April 2018
+Auch mit neueren Versionen als den hier angegebenen funktioniert diese Anleitung. Falls nicht, einfach nachfragen.
+
 Eclipse Entwicklungsumgebung installieren, um in Java zu entwickeln.
 
 Java installieren
