@@ -3,8 +3,6 @@ package com.hoffrogge.lehreinheit04;
 import java.awt.Color;
 import java.awt.Graphics;
 
-import com.hoffrogge.lehreinheit03.Rechteck;
-
 public class Quadrat extends Rechteck implements GeometrischeFigur {
 
     private int mittelpunktX;

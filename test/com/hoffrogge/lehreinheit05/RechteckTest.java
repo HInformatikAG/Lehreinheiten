@@ -1,6 +1,6 @@
 package com.hoffrogge.lehreinheit05;
 
-import com.hoffrogge.lehreinheit03.Rechteck;
+import com.hoffrogge.lehreinheit04.Rechteck;
 
 import junit.framework.TestCase;
 
