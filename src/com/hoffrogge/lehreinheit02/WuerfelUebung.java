@@ -5,6 +5,7 @@ public class WuerfelUebung {
     public static void main(String[] args) {
 
 	/*
+	 * ...
 	 * =============================================================================
 	 * AUFGABE 1: Erstelle ein Objekt vom Typ Wuerfel ohne Werte
 	 * =============================================================================
