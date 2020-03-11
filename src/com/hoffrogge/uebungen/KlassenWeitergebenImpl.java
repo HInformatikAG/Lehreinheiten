@@ -4,25 +4,25 @@ import com.hoffrogge.lehreinheit02.Wuerfel;
 
 public class KlassenWeitergebenImpl implements KlassenWeitergeben {
 
+
 	/** Übungsaufgabe 1:
 	 * Implementiere das KlassenWeitergeben interface.
 	 */
 	
 	@Override
-	public void addToInstanceList(Wuerfel wuerfel) {
-		// TODO Auto-generated method stub
+	public void fuegeZuInstanzenListeHinzu(Wuerfel wuerfel) {
+		
 	}
 
 	@Override
-	public Wuerfel getDieByName() {
-		// TODO Auto-generated method stub
+	public Wuerfel getWuerfelByBezeichnung(String bezeichnung) {
 		return null;
 	}
 
 	@Override
-	public int[] rollAll() {
-		// TODO Auto-generated method stub
+	public int[] alleWuerfeln() {
 		return null;
 	}
+
 	
 }
