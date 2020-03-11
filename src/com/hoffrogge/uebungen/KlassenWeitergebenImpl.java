@@ -5,7 +5,7 @@ import com.hoffrogge.lehreinheit02.Wuerfel;
 public class KlassenWeitergebenImpl implements KlassenWeitergeben {
 
 
-	/** Übungsaufgabe 1:
+	/* Uebungsaufgabe 1:
 	 * Implementiere das KlassenWeitergeben interface.
 	 */
 	
