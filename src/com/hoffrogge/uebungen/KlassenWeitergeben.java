@@ -1,25 +1,21 @@
 package com.hoffrogge.uebungen;
 
-import java.util.ArrayList;
-
 import com.hoffrogge.lehreinheit02.Wuerfel;;
 
 public interface KlassenWeitergeben {
 	
-	public ArrayList<Wuerfel> instanceList = new ArrayList<Wuerfel>();
-	
 	/**
-	 * Diese Methode sollte einen Würfel zu einer Liste von Rechtecksinstanzen hinzufügen.
+	 * Diese Methode sollte einen Würfel zu einer Liste von Würfelinstanzen hinzufügen.
 	 */
-	public void addToInstanceList(Wuerfel wuerfel);
+	public void fuegeZuInstanzenListeHinzu(Wuerfel wuerfel);
 	
 	/**
 	 * Diese Methode sollte einen Würfel mit einer Bezeichnung in der Liste finden und zurückgeben;
 	 */
-	public Wuerfel getDieByName();
+	public Wuerfel getWuerfelByBezeichnung(String bezeichnung);
 	
 	/**
 	 * Diese Methode gibt ein Array mit den Ergebnissen aller Würfel zurück.
 	 */
-	public int[] rollAll();
+	public int[] alleWuerfeln();
 }
