@@ -1,16 +1,37 @@
-Stand April 2018
+Stand Juni 2020
 Auch mit neueren Versionen als den hier angegebenen funktioniert diese Anleitung. Falls nicht, einfach nachfragen.
 
 Eclipse Entwicklungsumgebung installieren, um in Java zu entwickeln.
 
 Java installieren
+
 Schritt 1: Java herunterladen von http://www.oracle.com
-Aktuell ist Java 10, damit sollte alles funktionieren, wer auf Nummer sicher gehen will, auf den Laptops der AG ist Java 8 installiert
+
+Aktuell ist Java 14, damit sollte alles funktionieren, wer auf Nummer sicher gehen will, auf den Laptops der AG ist Java 8 installiert
+Der Unterschied zu Java 14 ist, dass es mehr Funktionen für Fortgeschrittene gibt, die behandeln wir aber in unserem Kurs nicht.
+
 Download Java 8: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
-Download Java 10: http://www.oracle.com/technetwork/java/javase/downloads/jdk10-downloads-4416644.html
-Schritt 2: Java mit der heruntergeladenen Exe installieren
+Download Java 14: https://www.oracle.com/java/technologies/javase-jdk14-downloads.html
+
+In der Liste die Installationsdatei für euer Betriebssystem herunterladen (wird vermutlich Windows sein, wenn das Betriebssystem unbekannt ist, fragt den Eigentümer des Rechners).
+
+Schritt 2: Installiert die eben heruntergeladene Datei, damit ist dann das Java™ Platform, Standard Edition Development Kit (JDK™) installiert. Dies ist notwendig, um Java-Quellcode in ein ausführbares
+Javaprogramm zu übersetzen.
+
 
 Eclipse installieren
+
 Schritt 1: Eclipse herunterladen von http://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/oxygen3a
+Wichtig, ladet die passende Version zum JDK herunter, wenn ihr das 32bit JDK installiert habt, dann benötigt ich auch 32bit Eclipse.
+Wenn ihr das 64bit JDK installiert habt, dann benötigt ich auch 64bit Eclipse.
+
+Der Link verweist auf eine etwas ältere Version von Eclipse, mit dieser Version sind die Übungen geschrieben und getestet, damit es bei allen Teilnehmern gleich funktioniert.
+Es sollte auch alles mit der aktuellsten Version von Eclipse funktionieren, dann ist aber manchmal etwas schwieriger zu helfen.
+
 Schritt 2: die heruntergeladene Eclipse.zip entpacken
 Schritt 3: im entpackten Ordner Eclipse ist eine Eclipse.exe, diese startet Eclipse
+
+Schritt 4: Eclipse sollte automatisch die installierte Javaversion finden und nutzen, ist dies nicht der Fall, dann wird nachgefragt, wo Java installiert ist. Dazu muss der Pfad angegeben werden, der
+sieht in etwa so aus: C:\Program Files\Java\jdk1.8.0_144 (Version kann z. B. abweichen, aber natürlich auch der Pfad, wenn bei der Installation vom JDK ein anderer Pfad gewählt wurde).
+
+Sollten noch Fragen bleiben oder etwas nicht funktionieren, dann einfach die Frage an die bekannte E-Mail-Adresse schicken.
