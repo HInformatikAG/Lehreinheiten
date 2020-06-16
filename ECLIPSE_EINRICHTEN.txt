@@ -31,7 +31,14 @@ Es sollte auch alles mit der aktuellsten Version von Eclipse funktionieren, dann
 Schritt 2: die heruntergeladene Eclipse.zip entpacken
 Schritt 3: im entpackten Ordner Eclipse ist eine Eclipse.exe, diese startet Eclipse
 
-Schritt 4: Eclipse sollte automatisch die installierte Javaversion finden und nutzen, ist dies nicht der Fall, dann wird nachgefragt, wo Java installiert ist. Dazu muss der Pfad angegeben werden, der
-sieht in etwa so aus: C:\Program Files\Java\jdk1.8.0_144 (Version kann z. B. abweichen, aber natürlich auch der Pfad, wenn bei der Installation vom JDK ein anderer Pfad gewählt wurde).
+Schritt 4: Eclipse sollte automatisch die installierte Javaversion finden und nutzen, ist dies nicht der Fall, dann muss die eclipse.ini aktualisiert werden,
+diese befindet sich im selben Ordner wie die Eclipse.exe
+In der eclipse.ini müssen die zwei Zeilen
+-vm
+C:\Program Files\Java\jdk-14.0.1\bin
+vorhanden sein. Sind sie vorhanden, dann muss der Pfad mit dem Installationsverzeichnis von Java übereinstimmen. Der Pfad im Beispiel ist der Standardpfad für das JDK 14.0.1.
+Sind die beiden Zeilen nicht vorhanden, einfach müssen die zwei Zeilen direkt vor "-vmargs" eingefügt werden.
+Screenshot: https://github.com/HInformatikAG/Lehreinheiten/blob/master/2020_06_16_16_06_19_eclipse.ini_Editor.png 
+
 
 Sollten noch Fragen bleiben oder etwas nicht funktionieren, dann einfach die Frage an die bekannte E-Mail-Adresse schicken.
