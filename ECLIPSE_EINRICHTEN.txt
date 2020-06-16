@@ -23,10 +23,10 @@ Eclipse installieren
 
 Schritt 1: Eclipse herunterladen von http://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/oxygen3a
 Wichtig, ladet die passende Version zum JDK herunter, wenn ihr das 32bit JDK installiert habt, dann benötigt ich auch 32bit Eclipse.
-Wenn ihr das 64bit JDK installiert habt, dann benötigt ich auch 64bit Eclipse.
+Wenn ihr das 64bit JDK installiert habt, dann benötigt ihr auch 64bit Eclipse.
 
 Der Link verweist auf eine etwas ältere Version von Eclipse, mit dieser Version sind die Übungen geschrieben und getestet, damit es bei allen Teilnehmern gleich funktioniert.
-Es sollte auch alles mit der aktuellsten Version von Eclipse funktionieren, dann ist aber manchmal etwas schwieriger zu helfen.
+Es sollte auch alles mit der aktuellsten Version von Eclipse funktionieren, dann ist es aber manchmal etwas schwieriger zu helfen.
 
 Schritt 2: die heruntergeladene Eclipse.zip entpacken
 Schritt 3: im entpackten Ordner Eclipse ist eine Eclipse.exe, diese startet Eclipse
