@@ -8,8 +8,6 @@ import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.net.URL;
 import java.text.MessageFormat;
-import java.util.ArrayList;
-import java.util.List;
 
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
@@ -20,8 +18,7 @@ import com.hoffrogge.lehreinheit04.GeometrischeFigur;
 
 /*
  * Zeichenfläche mit einer Größe von 800 x 800 Pixeln
- * @formatter:off
- *
+ * 
  *  0,0 ----------------------------------------- 800,0
  *  |                                               |
  *  |                                               |
@@ -41,15 +38,12 @@ import com.hoffrogge.lehreinheit04.GeometrischeFigur;
  *  |                                               |
  *  |                                               |
  *  0,800 --------------------------------------- 800,800
- *
- * @formater:on
  */
 /**
  * Zeichenfläche mit einer Größe von 800 x 800 Pixeln. <br />
- * Kann eine {@link GeometrischeFigur} aufnehmen und zeichnen.<br />
- * Hinzufuegen mit
- * {@link Zeichenbrett#fuegeZeichenbaresObjektHinzu(GeometrischeFigur)}.<br />
- * Zeichnen mit {@link Zeichenbrett#zeichneAlleZeichenbarenObjekte()}<br />
+ * Zeichnen mit
+ * {@link Zeichenbrett#zeichneGeometrischeFigur(GeometrischeFigur zeichenbaresObjekt)}<br
+ * />
  * Zeichnen einer Linie ist möglich mit
  * {@link Zeichenbrett#zeichneLinie(int, int, int, int)}<br />
  */
@@ -59,8 +53,6 @@ public class Zeichenbrett extends JPanel {
     private static final int KANTEN_LAENGE = 800;
 
     private BufferedImage zeichenflaeche;
-
-    private List<GeometrischeFigur> zeichenbareObjekte;
 
     private JFrame fenster;
 
@@ -75,8 +67,6 @@ public class Zeichenbrett extends JPanel {
 	g2d.fillRect(0, 0, zeichenflaeche.getWidth(), zeichenflaeche.getHeight());
 
 	g2d.dispose();
-
-	zeichenbareObjekte = new ArrayList<>();
 
 	fenster = new JFrame();
 	fenster.setTitle(MessageFormat.format("Zeichenbrett {0} x {1}", KANTEN_LAENGE, KANTEN_LAENGE));
@@ -97,6 +87,7 @@ public class Zeichenbrett extends JPanel {
 	 * Kleiner Trick, um das Fenster in der Mitte des Bildschirms anzuzeigen
 	 */
 	fenster.setLocationRelativeTo(null);
+	fenster.setVisible(true);
     }
 
     @Override
@@ -107,24 +98,13 @@ public class Zeichenbrett extends JPanel {
 	g.drawImage(zeichenflaeche, 2, 2, this);
     }
 
-    public void zeichneAlleZeichenbarenObjekte() {
+    public void zeichneGeometrischeFigur(GeometrischeFigur geometrischeFigur) {
 
 	Graphics g2d = zeichenflaeche.getGraphics();
 
-	for (GeometrischeFigur zeichenbaresObjekt : zeichenbareObjekte)
-	    zeichenbaresObjekt.zeichnen(g2d);
+	geometrischeFigur.zeichnen(g2d);
 
 	g2d.dispose();
-
-	fenster.setVisible(true);
-    }
-
-    public void fuegeZeichenbaresObjektHinzu(GeometrischeFigur zeichenbaresObjekt) {
-	zeichenbareObjekte.add(zeichenbaresObjekt);
-    }
-
-    public void entferneZeichenbaresObjekt(GeometrischeFigur zeichenbaresObjekt) {
-	zeichenbareObjekte.remove(zeichenbaresObjekt);
     }
 
     /**
