@@ -17,7 +17,7 @@ import javax.swing.JPanel;
 import com.hoffrogge.lehreinheit04.GeometrischeFigur;
 
 /*
- * Zeichenfl‰che mit einer Grˆﬂe von 800 x 800 Pixeln
+ * Zeichenfl√§che mit einer Gr√∂√üe von 800 x 800 Pixeln
  *  0,0 ----------------------------------------- 800,0
  *  |                                               |
  *  |                                               |
@@ -39,11 +39,11 @@ import com.hoffrogge.lehreinheit04.GeometrischeFigur;
  *  0,800 --------------------------------------- 800,800
  */
 /**
- * Zeichenfl‰che mit einer Grˆﬂe von 800 x 800 Pixeln. <br />
+ * Zeichenfl√§che mit einer Gr√∂√üe von 800 x 800 Pixeln. <br />
  * Zeichnen mit
  * {@link Zeichenbrett#zeichneGeometrischeFigur(GeometrischeFigur zeichenbaresObjekt)}<br
  * />
- * Zeichnen einer Linie ist mˆglich mit
+ * Zeichnen einer Linie ist m√∂glich mit
  * {@link Zeichenbrett#zeichneLinie(int, int, int, int)}<br />
  */
 @SuppressWarnings("serial")

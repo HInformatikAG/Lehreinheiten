@@ -1,7 +1,7 @@
 package com.hoffrogge.lehreinheit01;
 
 /*
- * Zeichenfl‰che mit einer Grˆﬂe von 800 x 800 Pixeln
+ * Zeichenfl√§che mit einer Gr√∂√üe von 800 x 800 Pixeln
  * 
  *  0,0 ----------------------------------------- 800,0
  *  |                                               |
@@ -30,7 +30,7 @@ public class Main {
 	/*
 	 * =====================================================================
 	 * 
-	 * Dieses Zeichenbrett hat eine Laenge und Breite von 800.
+	 * Dieses Zeichenbrett hat eine L√§nge und Breite von 800.
 	 *
 	 * AUFGABE: Schaue dir die Beispiele an und zeichne selbst ein paar Linien.
 	 * Schaffst du es, einen Tetrisspielstein zu zeichnen?
