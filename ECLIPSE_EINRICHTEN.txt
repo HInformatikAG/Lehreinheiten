@@ -8,24 +8,24 @@ Java installieren
 Schritt 1: Java herunterladen von http://www.oracle.com
 
 Aktuell ist Java 14, damit sollte alles funktionieren, wer auf Nummer sicher gehen will, auf den Laptops der AG ist Java 8 installiert
-Der Unterschied zu Java 14 ist, dass es mehr Funktionen für Fortgeschrittene gibt, die behandeln wir aber in unserem Kurs nicht.
+Der Unterschied zu Java 14 ist, dass es mehr Funktionen fÃ¼r Fortgeschrittene gibt, die behandeln wir aber in unserem Kurs nicht.
 
 Download Java 8: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 Download Java 14: https://www.oracle.com/java/technologies/javase-jdk14-downloads.html
 
-In der Liste die Installationsdatei für euer Betriebssystem herunterladen (wird vermutlich Windows sein, wenn das Betriebssystem unbekannt ist, fragt den Eigentümer des Rechners).
+In der Liste die Installationsdatei fÃ¼r euer Betriebssystem herunterladen (wird vermutlich Windows sein, wenn das Betriebssystem unbekannt ist, fragt den EigentÃ¼mer des Rechners).
 
-Schritt 2: Installiert die eben heruntergeladene Datei, damit ist dann das Java™ Platform, Standard Edition Development Kit (JDK™) installiert. Dies ist notwendig, um Java-Quellcode in ein ausführbares
-Javaprogramm zu übersetzen.
+Schritt 2: Installiert die eben heruntergeladene Datei, damit ist dann das Javaâ„¢ Platform, Standard Edition Development Kit (JDKâ„¢) installiert. Dies ist notwendig, um Java-Quellcode in ein ausfÃ¼hrbares
+Javaprogramm zu Ã¼bersetzen.
 
 
 Eclipse installieren
 
 Schritt 1: Eclipse herunterladen von http://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/oxygen3a
-Wichtig, ladet die passende Version zum JDK herunter, wenn ihr das 32bit JDK installiert habt, dann benötigt ich auch 32bit Eclipse.
-Wenn ihr das 64bit JDK installiert habt, dann benötigt ihr auch 64bit Eclipse.
+Wichtig, ladet die passende Version zum JDK herunter, wenn ihr das 32bit JDK installiert habt, dann benÃ¶tigt ich auch 32bit Eclipse.
+Wenn ihr das 64bit JDK installiert habt, dann benÃ¶tigt ihr auch 64bit Eclipse.
 
-Der Link verweist auf eine etwas ältere Version von Eclipse, mit dieser Version sind die Übungen geschrieben und getestet, damit es bei allen Teilnehmern gleich funktioniert.
+Der Link verweist auf eine etwas Ã¤ltere Version von Eclipse, mit dieser Version sind die Ãœbungen geschrieben und getestet, damit es bei allen Teilnehmern gleich funktioniert.
 Es sollte auch alles mit der aktuellsten Version von Eclipse funktionieren, dann ist es aber manchmal etwas schwieriger zu helfen.
 
 Schritt 2: die heruntergeladene Eclipse.zip entpacken
@@ -33,11 +33,11 @@ Schritt 3: im entpackten Ordner Eclipse ist eine Eclipse.exe, diese startet Ecli
 
 Schritt 4: Eclipse sollte automatisch die installierte Javaversion finden und nutzen, ist dies nicht der Fall, dann muss die eclipse.ini aktualisiert werden,
 diese befindet sich im selben Ordner wie die Eclipse.exe
-In der eclipse.ini müssen die zwei Zeilen
+In der eclipse.ini mÃ¼ssen die zwei Zeilen
 -vm
 C:\Program Files\Java\jdk-14.0.1\bin
-vorhanden sein. Sind sie vorhanden, dann muss der Pfad mit dem Installationsverzeichnis von Java übereinstimmen. Der Pfad im Beispiel ist der Standardpfad für das JDK 14.0.1.
-Sind die beiden Zeilen nicht vorhanden, einfach müssen die zwei Zeilen direkt vor "-vmargs" eingefügt werden.
+vorhanden sein. Sind sie vorhanden, dann muss der Pfad mit dem Installationsverzeichnis von Java Ã¼bereinstimmen. Der Pfad im Beispiel ist der Standardpfad fÃ¼r das JDK 14.0.1.
+Sind die beiden Zeilen nicht vorhanden, einfach mÃ¼ssen die zwei Zeilen direkt vor "-vmargs" eingefÃ¼gt werden.
 Screenshot: https://github.com/HInformatikAG/Lehreinheiten/blob/master/2020_06_16_16_06_19_eclipse.ini_Editor.png 
 
 
